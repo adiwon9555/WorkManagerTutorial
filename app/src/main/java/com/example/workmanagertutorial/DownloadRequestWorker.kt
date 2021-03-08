@@ -18,7 +18,7 @@ class DownloadRequestWorker(appContext: Context, workerParams: WorkerParameters)
     override fun doWork(): Result {
         try {
             for (i in 1 until 600){
-                Log.d(TAG, "doWork: "+i)
+                Log.d(TAG, "doWork: from WorkManagerStartReceive "+i)
             }
             return Result.success()
         }catch (e: Exception){
